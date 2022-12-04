@@ -9,7 +9,9 @@ namespace Day_1
     {
         static void Main()
         {
-            List<string> cals = File.ReadAllText(@"C:\\Users\\Toby\\source\repos\\Advent Of Code 2022\\Day 1\\input.txt").Split("\n\n").ToList();
+            List<string> cals = File.ReadAllText(@"C:\\Users\\Toby\\source\repos\\Advent Of Code 2022\\Day 1\\input.txt")
+                .Split("\n\n")
+                .ToList();
             
             List<int> elfCallories = new List<int>();
             for (int i = 0; i < cals.Count - 1; i++)
